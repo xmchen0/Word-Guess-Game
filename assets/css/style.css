@@ -1,0 +1,57 @@
+body {
+    background: url(https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SY1000_CR0,0,701,1000_AL_.jpg);
+    background-repeat: repeat;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: 150px;
+    width: 1000px;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: #1e4ca0;
+}
+.instruction {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eb2831;
+}
+
+.catchphrase {
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+    padding: 39px;
+    border: 7px solid #fdd53e;
+    background: #ffffff;
+}
+
+.background {
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    background-color: #ebebeb;
+    border: 1px solid #a8a6a6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+}
+
+#guessesRemaining {
+
+}
+
+#playerGuesses {
+    
+}
+
+
+

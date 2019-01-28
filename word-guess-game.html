@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Seinfeld | Guess That Catchphrase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Link to JavaScript-->
+    <script src="./assets/javascript/word-guess-game.js"></script>
+    <!--Link to Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background">
+
+        <!--Heading-->
+        <div class="heading">
+            <h1>Guess That Seinfeld Catchphrase!</h1>
+        </div>
+
+        <!--Instructions-->
+        <div class="instruction">
+            <h4><strong>Press Any Key To Get Started</strong></h4>
+        </div>
+
+        <!--Current catchphrase blanks-->
+        <div class="catchphrase">
+            <h1>_ _ - _ _ _ _ - _ _ _ - _ _ _ !</h1>
+        </div>
+        
+        <div class="scoreCounter">
+            <!--Display guesses remaining-->
+            <div class="guessRemainingTracker">
+                <h3>Number of guesses remaining:
+                    <span id="guessesRemaining"></span>
+                </h3>
+            </div>
+
+            <!--Display wrong guesses-->
+            <div class="guessWrongTracker">
+                <h3>Letters already guessed:
+                    <span id="playerGuesses"></span>
+                </h3>
+            </div>
+        </div>
+
+        <!--When guessed correctly, display video-->
+        <div class="video">
+        </div>
+    
+    
+    </div>
+
+</body>
+
+</html>
