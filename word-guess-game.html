@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Seinfeld | Guess That Catchphrase</title>
+    <title>Seinfeld | Guess That Seinlanguage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Link to CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -17,9 +17,14 @@
 
     <div class="background">
 
-        <!--Heading-->
+        <!--Main Heading-->
         <div class="heading">
-            <h1>Guess That Seinfeld Catchphrase!</h1>
+            <h1>Welcome!</h1>
+        </div>
+
+        <!--Sub Heading-->
+        <div class="subheading">
+            <h3>What is your favourite TV show of all time? Mine would have to be Seinfeld. Take a guess what this Seinfeldian code word is:</h3>
         </div>
 
         <!--Instructions-->
@@ -27,12 +32,11 @@
             <h4><strong>Press Any Key To Get Started</strong></h4>
         </div>
 
-        <!--Current catchphrase blanks-->
-        <div class="catchphrase">
-            <h1>_ _ - _ _ _ _ - _ _ _ - _ _ _ !</h1>
+        <!--Current word blanks-->
+        <div class="wordBlank">
+            <h1>_ _ _ _ _ _ _ _</h1>
         </div>
         
-        <div class="scoreCounter">
             <!--Display guesses remaining-->
             <div class="guessRemainingTracker">
                 <h3>Number of guesses remaining:
@@ -42,17 +46,11 @@
 
             <!--Display wrong guesses-->
             <div class="guessWrongTracker">
-                <h3>Letters already guessed:
+                <h3>Previous guesses:
                     <span id="playerGuesses"></span>
                 </h3>
             </div>
         </div>
-
-        <!--When guessed correctly, display video-->
-        <div class="video">
-        </div>
-    
-    
     </div>
 
 </body>

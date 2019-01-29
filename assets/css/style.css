@@ -15,18 +15,24 @@ body {
     font-family: 'Lobster', cursive;
     text-align: center;
     color: #1e4ca0;
+    padding: 20px;
 }
+
+.subheading {
+    padding: 20px;
+}
+
 .instruction {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #eb2831;
 }
 
-.catchphrase {
+.wordBlank {
     text-align: center;
-    width: 55%;
+    width: 50%;
     margin: 0 auto;
-    padding: 39px;
+    padding: 30px;
     border: 7px solid #fdd53e;
     background: #ffffff;
 }
@@ -42,15 +48,17 @@ body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    transform: translate(-50%, -50%) 
 }
 
-#guessesRemaining {
-
+.guessRemainingTracker {
+    text-align: left;
+    margin-left: 20%;
 }
 
-#playerGuesses {
-    
+.guessWrongTracker {
+    text-align: left;
+    margin-left: 20%;
 }
 
 
