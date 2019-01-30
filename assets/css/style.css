@@ -51,15 +51,10 @@ body {
     transform: translate(-50%, -50%) 
 }
 
-.guessRemainingTracker {
+.tracker {
     text-align: left;
     margin-left: 20%;
-}
 
-.guessWrongTracker {
-    text-align: left;
-    margin-left: 20%;
-}
 
 
 
