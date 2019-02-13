@@ -47,7 +47,7 @@ function startGame() {
     document.getElementById("wordToGuess").innerHTML = guessLetterBlanks.join(" ");
     document.getElementById("guessesRemaining").innerHTML = guessTries;
     document.getElementById("totalWins").innerHTML = winCount;
-    document.getElementById("playerGuesses").innerHTML = lossCount;
+    document.getElementById("totalLosses").innerHTML = lossCount;
 };
 
 // 2. check letter if it exist in the word, if so where in the word to populate the blank

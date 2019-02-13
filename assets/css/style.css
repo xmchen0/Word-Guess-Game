@@ -23,6 +23,7 @@ body {
 }
 
 .instruction {
+    padding: 25px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #eb2831;
@@ -35,6 +36,7 @@ body {
     padding: 30px;
     border: 7px solid #fdd53e;
     background: #ffffff;
+    font-size: 1vw;
 }
 
 .background {
@@ -52,8 +54,10 @@ body {
 }
 
 .tracker {
-    text-align: left;
-    margin-left: 20%;
+    padding: 25px;
+    text-align: center;
+    font-size: 1vw;
+}
 
 
 

@@ -32,17 +32,10 @@
 
         <!--Current word blanks-->
         <div class="wordBlank">
-            <h1 id="wordToGuess">_ _ _ _ _ _ _ _</h1>
+            <h1 id="wordToGuess">_ _ _ _ _</h1>
         </div>
         
         <div class="tracker">
-            <!--Display wins-->
-            <div class="winTracker">
-                <h3>Wins:
-                    <span id="totalWins"></span>
-                </h3>
-            </div>
-
             <!--Display guesses remaining-->
             <div class="guessRemainingTracker">
                 <h3>Guesses remaining:
@@ -54,6 +47,20 @@
             <div class="guessWrongTracker">
                 <h3>Previous guesses:
                     <span id="playerGuesses"></span>
+                </h3>
+            </div>
+
+            <!--Display wins-->
+            <div class="winTracker">
+                <h3>Wins:
+                    <span id="totalWins"></span>
+                </h3>
+            </div>
+
+            <!--Display losses-->
+            <div class="loseTracker">
+                <h3>Losses:
+                    <span id="totalLosses"></span>
                 </h3>
             </div>
         </div>
