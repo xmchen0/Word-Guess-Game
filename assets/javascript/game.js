@@ -50,7 +50,8 @@ function startGame() {
     document.getElementById("totalLosses").innerHTML = lossCount;
 };
 
-// 2. check letter if it exist in the word, if so where in the word to populate the blank
+// 2. check letter if it exist in the word, 
+// if so where in the word to populate the blank
 
 function checkLetters(letter) {
 
@@ -73,7 +74,8 @@ function checkLetters(letter) {
     } 
 
     // 2.3 otherwise if letters does not exist in the word, 
-    // 2.3 add wrong letter guesses wrong 
+    // 2.3 add wrong letter in guessed wrong 
+    // 2.3 reduce guessTries by 1
     else {
         wrongLetters.push(letter);
         guessTries--;
@@ -96,7 +98,7 @@ function roundComplete() {
     // 3.1 run startGame function
     if (lettersinWord.toString() == guessLetterBlanks.toString()) {
         winCount++;
-        alert("Congratulations! You Won!");
+        alert("Congratulations! You Won! 👏");
         document.getElementById("totalWins").innerHTML = winCount;
         startGame();
     }
@@ -108,7 +110,7 @@ function roundComplete() {
     // 3.2 run startGame function
     else if (guessTries == 0) {
         lossCount++;
-        alert("You Lost! Try Again.");
+        alert("You Lost! 👎 Try Again.");
         document.getElementById("playerGuesses").innerHTML = lossCount;
         startGame();
     }
@@ -123,10 +125,10 @@ function roundComplete() {
 /// MAIN PROCESS
 // ===========================================================================================================
 
-// initiate the code for the first time
+// 1. initiate the code for the first time
 startGame();
 
-// add event handle to capture user input
+// 2. add event listener to capture user input
 document.onkeyup = function(event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(letterGuessed);
