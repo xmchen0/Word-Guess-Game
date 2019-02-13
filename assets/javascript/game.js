@@ -3,7 +3,7 @@
 /* Spoiler Alert: The following code contains answers to word blanks in the game */
 
 /// GLOBAL VARIABLES
-// ==============================================================================
+// ===========================================================================================================
 
 var wordAnswers = ["festivus","spongeworthy","regifter","manhands","shrinkage","rageaholic"]
 var blanks = 0;
@@ -18,18 +18,18 @@ var lossCount = 0;
 var guessTries = 9;
 
 /// FUNCTIONS
-// ==============================================================================
+// ===========================================================================================================
 
 // 1. setup variables and add sections that makes up the game screen
 function startGame() {
 
     // 1.1 make sure a word is selected
     // 1.1 use Math.floor to round the random number down to the nearest whole
-    // 1.1 break words apart into an array of individual letters
+    // 1.1 split words into an array of individual letters
     // 1.1 get how many blanks are required for this word
-    currentWord = wordAnswers[Math.floor(Math.random() * (wordAnswers.length))];
+    currentWord = wordAnswers[Math.floor(Math.random() * wordAnswers.length)];
     lettersinWord = currentWord.split("");
-    guessLetter = lettersinWord.length;
+    blanks = lettersinWord.length;
     
     // 1.2 reset number of guess
     // 1.2 reset wrong guesses are back to xero
@@ -56,11 +56,11 @@ function checkLetters(letter) {
 
     // 2.1 check letter in word
     var isLetterinWord = false;
-    for (var i = 0; i < blanks; i++) {
-        if(currentWord[i] == letter) {
-            isLetterinWord = true;
+        for (var i = 0; i < blanks; i++) {
+            if(currentWord[i] == letter) {
+                isLetterinWord = true;
+            }
         }
-    }
 
     // 2.2 if letter exists in word, 
     // 2.2 locate it by using for loop
@@ -76,7 +76,7 @@ function checkLetters(letter) {
     // 2.3 add wrong letter guesses wrong 
     else {
         wrongLetters.push(letter);
-        guessTries--
+        guessTries--;
     }
 
     // testing
@@ -86,7 +86,7 @@ function checkLetters(letter) {
 // 3. display scoreboard
 function roundComplete() {
 
-    //testing
+    // testing
     console.log("Win count: " + winCount + " | Loss Count: " + lossCount + " | Guesses Left" + guessTries);
 
     // 3.1 if blanks matches to the sting, 
@@ -94,7 +94,7 @@ function roundComplete() {
     // 3.1 display alert player won,
     // 3.1 get html to update the win counter,
     // 3.1 run startGame function
-    if (lettersinWord.toString() == blanks.toString()) {
+    if (lettersinWord.toString() == guessLetterBlanks.toString()) {
         winCount++;
         alert("Congratulations! You Won!");
         document.getElementById("totalWins").innerHTML = winCount;
@@ -115,20 +115,20 @@ function roundComplete() {
 
     // 3.3 get html elements to store as objects to update counter
     document.getElementById("guessesRemaining").innerHTML = guessTries;
-    document.getElementById("wordToGuess").innerHTML = blanks.join(" ");
+    document.getElementById("wordToGuess").innerHTML = guessLetterBlanks.join(" ");
     document.getElementById("playerGuesses").innerHTML = wrongLetters.join(" ");
     
 }
 
 /// MAIN PROCESS
-// ==============================================================================
+// ===========================================================================================================
 
 // initiate the code for the first time
-startGame()
+startGame();
 
 // add event handle to capture user input
 document.onkeyup = function(event) {
-    var letterGuesses = String.fromCharCode(event.keyCode).toLowerCase();
-    checkLetters(wrongLetters);
+    var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
+    checkLetters(letterGuessed);
     roundComplete();
 }
