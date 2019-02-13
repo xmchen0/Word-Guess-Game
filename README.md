@@ -16,4 +16,6 @@ Preview and play the game here: https://xmkchen.github.io/Word-Guess-Game/
 Good Luck!
 
 ## Acknowledgement
+Ahmed from The Boot Camp
+
 UofT Bootcamp 2019
